@@ -1,0 +1,129 @@
+/* Main container styling */
+.main {
+  background-color: #F5F5F5; /* Primary color */
+  color: #FFEB00; /* Secondary color */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Page container */
+.page {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #6256CA; /* Secondary color */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input section */
+.input {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #86D293; /* Tertiary color */
+  text-align: center;
+}
+
+/* Input fields styling */
+.taskInput,
+.detailsInput,
+.dateInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #F5F5F5;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.taskInput:focus,
+.detailsInput:focus,
+.dateInput:focus {
+  outline: none;
+  border-color: #604CC3; /* Additional accent color */
+}
+
+/* Buttons styling */
+.btn_add {
+  background-color: #604CC3; /* Additional accent color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn_add:hover {
+  background-color: #8FD14F; /* Lighter on hover */
+}
+
+.btn_group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btns {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn_done {
+  background-color: #8FD14F; /* Tertiary color */
+  color: #181C14; /* Primary color */
+}
+
+.btn_done:hover {
+  background-color: #FFEB00; /* Lighter on hover */
+}
+
+.btn_delete {
+  background-color: #181C14; /* Primary color */
+  color: #FFEB00; /* Secondary color */
+}
+
+.btn_delete:hover {
+  background-color: #604CC3; /* Lighter on hover */
+}
+
+/* Todo list section */
+.list {
+  margin-top: 20px;
+}
+
+.ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: white;
+  border-left: 5px solid #181C14; /* Additional accent */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.todo-item.done {
+  background-color: #8FD14F; /* Completed task color */
+}
+
+.todo-item h2 {
+  margin: 0;
+  color: #181C14; /* Primary text color */
+}
+
+.todo-item p {
+  margin: 5px 0;
+  color: #181C14; /* Detail text color */
+}
